@@ -1,3 +1,5 @@
+ Bloc is a design pattern created by Google to help separate business logic from the presentation layer and enable a developer to reuse code more    efficiently
+
 We are creating a PublishSubject object whose responsibility is to add the data which it got from the server in the form of ItemModel object and pass it to the UI screen as a stream.
 
 ## Publish Subject:
