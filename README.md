@@ -14,3 +14,6 @@ This means the Subject's stream can be listened to multiple times.
  
 → BehaviorSubject<T> class Null safety. A special StreamController that captures the latest item that has been added to the controller, and emits that as the first item to any new listener. This subject allows sending data, error and done events to the listener.
 
+ 
+ ![image](https://user-images.githubusercontent.com/39657409/159454525-8ed731fa-9303-4c1a-8320-20ede4316fb3.png)
+
