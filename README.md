@@ -1,16 +1,16 @@
-# flutter_blocex1
+We are creating a PublishSubject object whose responsibility is to add the data which it got from the server in the form of ItemModel object and pass it to the UI screen as a stream.
 
-A new Flutter project.
+## Publish Subject:
 
-## Getting Started
+Exactly like a normal broadcast StreamController with one exception: this class is both a Stream and Sink.
 
-This project is a starting point for a Flutter application.
+This Subject allows sending data, error and done events to the listener.
 
-A few resources to get you started if this is your first Flutter project:
+PublishSubject is, by default, a broadcast (aka hot) controller, in order to fulfill the Rx Subject contract. 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+This means the Subject's stream can be listened to multiple times.
+ 
+## Behavior Subject:
+ 
+→ BehaviorSubject<T> class Null safety. A special StreamController that captures the latest item that has been added to the controller, and emits that as the first item to any new listener. This subject allows sending data, error and done events to the listener.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
